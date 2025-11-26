@@ -1,0 +1,19 @@
+{
+    "name": "perasser/numberplate",
+    "description": "A numberplate library",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Perasser\\Numberplate\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Peter Rasser",
+            "email": "peter.rasser@hakzell.at"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
