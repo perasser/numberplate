@@ -17,9 +17,11 @@ class NumberplateConverter
     public function convert(string $numberplate): string
     {
         if (mb_strlen($numberplate) > 2) {
-            $abr = substr($numberplate, 0, 2);
+            //$abr = substr($numberplate, 0, 2);
 
-            return $this->lookupTable[$abr];
+            $abr = explode('-', $numberplate);
+
+            return $this->lookupTable[$abr[0]];
         }
         else {
             return '';
